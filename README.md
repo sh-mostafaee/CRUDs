@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to CRUDs Project
 
-## Getting Started
+This project is an example of implementing the CRUD entities on the client side using React and Redux.
 
-First, run the development server:
+## CRUD Entities
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### 1. Books
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+In this page you can see the Material Data Grid component which is rendering a client side array called books with custom row rendering based on each data field, where you can operate the full CRUD functionality such as add, edit and delete on the client side using local state.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Users
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+There are two routes for this entity to list all the users and have a deep review of each single user.
 
-## Learn More
+#### 2.1 Users List (/users)
 
-To learn more about Next.js, take a look at the following resources:
+In this page, you can see users loaded from [JSON Placeholder Users API](https://jsonplaceholder.typicode.com/users)
+And by clicking on each item, you would navigate to the single user page to see the full details of the selected user
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### 2.2 Single User (/users/:id)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+In this page, based on the id in the path parameter, you can see the user loaded from [JSON Placeholder Single User API](https://jsonplaceholder.typicode.com/users/1)
 
-## Deploy on Vercel
+### 3. Products
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+In this page you can see the Material Data Grid component which is rendering a client side array called products
