@@ -22,9 +22,9 @@ export default function SingleUser(props: singleUserProps) {
   }, []);
 
   return (
-    <div className="">
+    <div className="h-[100vh] flex items-center justify-center">
       {loading ? <Loading fullScreen /> : null}
-      <div className="border-2 b">
+      <div className="padding flex items-center justify-center shadow-white rounded-3xl p-10 shadow ">
         {data ? (
           <div>
             hello user:{id}
