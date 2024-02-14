@@ -30,9 +30,7 @@ export function ProductModal(props: ProductModalProps) {
   const handleChangeName = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value as string);
   };
-  const handleChangeCost = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setCost(event.target.value as number);
-  };
+
   return (
     <div>
       <Dialog open={open} onClose={handleClose}>
@@ -49,8 +47,8 @@ export function ProductModal(props: ProductModalProps) {
               sx={{ mb: 2 }}
               value={name}
               onChange={handleChangeName}
-              error={!!errors.name}
-              helperText={errors.name}
+              error={!!errors}
+              helperText={errors}
             />
           </FormControl>
         </DialogContent>
